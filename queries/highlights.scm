@@ -43,6 +43,7 @@
 (command name: (word) @function)
 (command argument: (word) @constant (#match? @constant "^-."))
 (command argument: (concatenation . (word) @constant (#match? @constant "^-.")))
+(command_substitution) @embedded
 
 [
  "switch"
